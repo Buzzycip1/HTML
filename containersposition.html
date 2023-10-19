@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Ejemplo de Tipos de Position en CSS</title>
+  <meta name="author" content="Tomás Fuentes Facal" />
+    <!-- <link rel="stylesheet" type="text/css" href="style-autores.css">-->
+  
+  <style>
+
+      /* Estilos para el cuerpo de la página */
+      body {
+      height: 100vh;
+      /* Establece la altura del cuerpo de la página */
+      display: flex;
+      /* Utiliza un diseño de caja flexible */
+      align-items: center;
+      /* Centra verticalmente los elementos */
+      justify-content: center;
+      /* Centra horizontalmente los elementos */
+    }
+
+    /* Estilos para el contenedor principal */
+    .container {
+      width: 300px;
+      /* Establece el ancho del contenedor */
+      height: 200px;
+      /* Establece la altura del contenedor */
+      background-color: #f2f2f2;
+      /* Cambia el color de fondo del contenedor */
+      border: 1px solid #ccc;
+      /* Agrega un borde al contenedor */
+      position: relative;
+      /* Establece la posición relativa */
+    }
+
+    /* Estilos para el elemento */
+    .element {
+      width: 100px;
+      /* Establece el ancho del elemento */
+      height: 100px;
+      /* Establece la altura del elemento */
+    }
+
+    /* Estilos para el elemento con posición estática */
+    .static {
+      position: static;
+      /* Establece la posición estática */
+      background-color: blue;
+      /* Cambia el color de fondo del elemento */
+    }
+
+    /* Estilos para el elemento con posición relativa */
+    .relative {
+      position: relative;
+      /* Establece la posición relativa */
+      top: 20px;
+      /* Desplaza el elemento 20px hacia abajo */
+      left: 20px;
+      /* Desplaza el elemento 20px hacia la derecha */
+      background-color: green;
+      /* Cambia el color de fondo del elemento */
+    }
+
+    /* Estilos para el elemento con posición absoluta */
+    .absolute {
+      position: absolute;
+      /* Establece la posición absoluta */
+      top: 50%;
+      /* Coloca el elemento en el centro vertical */
+      left: 50%;
+      /* Coloca el elemento en el centro horizontal */
+      transform: translate(-50%, -50%);
+      /* Centra exactamente el elemento */
+      background-color: yellow;
+      /* Cambia el color de fondo del elemento */
+    }
+
+    /* Estilos para el elemento con posición fija */
+    .fixed {
+      position: fixed;
+      /* Establece la posición fija */
+      top: 20px;
+      /* Coloca el elemento 20px desde la parte superior */
+      right: 20px;
+      /* Coloca el elemento 20px desde la parte derecha */
+      background-color: #ff0000;
+      /* Cambia el color de fondo del elemento */
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="element static"></div> <!-- Elemento con posición estática azul -->
+    <div class="element relative"></div> <!-- Elemento con posición relativa verde -->
+    <div class="element absolute"></div> <!-- Elemento con posición absoluta amarillo-->
+    <div class="element fixed"></div> <!-- Elemento con posición fija rojo-->
+  </div>
+</body>
+
+</html>

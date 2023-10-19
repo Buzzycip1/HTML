@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tienda de Ropa - Sarita</title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      
+    }
+    header {
+      background-color: #c8ae76;
+      text-align: center;
+      color: white;
+      padding: 1px;
+    }
+    header h1 {
+      text-size-adjust: flex;
+    }
+
+    nav {
+      background-color: #c8ae76;
+      height: 30px;
+    }
+    nav ul {
+      margin: 0;
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .product {
+      background-color: white;
+      padding: 10px;
+      box-shadow: 0 0 5px gray;
+      margin: 10px;
+      text-align: center;
+    }
+
+    .product img:hover {
+      transform: scale(1.2);
+    } 
+
+    h2 {
+      width: 100%;
+    }
+
+    #favoritos,
+    #hombres,
+    #mujeres,
+    #ninos {
+      text-align: center;
+      background-color: #fafdf3;
+      display: flex;
+      flex-wrap: wrap;
+      height: auto;
+      justify-content: center;
+      padding: 15px;
+      align-items: flex-end;
+    }
+
+    #hombres {
+      background-color: #f5f5dd;
+    }
+
+    #mujeres {
+      background-color: #eae3c9;
+    }
+
+    #ninos {
+      background-color: #d2bd96;
+    }
+
+    footer {
+      background-color: #c8ae76;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    
+  </style>
+
+  <body>
+    <header>
+      <h1>Tienda de Ropa - Sarita</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#hombres">Hombres</a></li>
+        <li><a href="#mujeres">Mujeres</a></li>
+        <li><a href="#ninos">Niños</a></li>
+        <li><a href="#favoritos">Favoritos</a></li>
+      </ul>
+    </nav>
+    <section id="favoritos">
+      <h2>Productos Favoritos</h2>
+      <div class="product">
+        <img src="./exercises/Image/mujer1.jpg" alt="Favorito 1" />
+        <h3>Vestido de Fiesta</h3>
+        <p>Precio: 50€</p>
+      </div>
+      <div class="product">
+        <img src="./exercises/Image/nino2.jpg" alt="Favorito 2" />
+        <h3>Camiseta de Diseño</h3>
+        <p>Precio: 45€</p>
+      </div>
+      <div class="product">
+        <img src="./exercises/Image/hombre1.jpg" alt="Favorito 3" />
+        <h3>Camisa elegante</h3>
+        <p>Precio: 65€</p>
+      </div>
+      <!-- Agrega más productos favoritos aquí -->
+    </section>
+
+    <section id="hombres">
+      <h2>Ropa para Hombres</h2>
+      <div class="product">
+        <img src="./exercises/Image/hombre1.jpg" alt="Hombre 1" />
+        <h3>Camisa de Vestir</h3>
+        <p>Precio: 50€</p>
+      </div>
+      <div class="product">
+        <img src="./exercises/Image/hombre2.jpg" alt="Hombre 2" />
+        <h3>Pantalón de Mezclilla</h3>
+        <p>Precio: 70€</p>
+      </div>
+      <div class="product">
+        <img src="./exercises/Image/hombre1.jpg" alt="Hombre 1" />
+        <h3>Camisa de Vestir</h3>
+        <p>Precio: 50€</p>
+      </div>
+      <div class="product">
+        <img src="./exercises/Image/hombre2.jpg" alt="Hombre 2" />
+        <h3>Pantalón de Mezclilla</h3>
+        <p>Precio: 70€</p>
+      </div>
+      <div class="product">
+        <img src="./exercises/Image/hombre1.jpg" alt="Hombre 1" />
+        <h3>Camisa de Vestir</h3>
+        <p>Precio: 50€</p>
+      </div>
+      <div class="product">
+        <img src="./exercises/Image/hombre2.jpg" alt="Hombre 2" />
+        <h3>Pantalón de Mezclilla</h3>
+        <p>Precio: 70€</p>
+      </div>
+      <!-- Agrega más productos para hombres aquí -->
+    </section>
+
+    <section id="mujeres">
+      <h2>Ropa para Mujeres</h2>
+      <div class="product">
+        <img src="./exercises/Image/mujer1.jpg" alt="Mujer 1" />
+        <h3>Vestido de Verano</h3>
+        <p>Precio: 80€</p>
+      </div>
+      <div class="product">
+        <img src="./exercises/Image/mujer2.jpg" alt="Mujer 2" />
+        <h3>Blusa Estampada</h3>
+        <p>Precio: 45€</p>
+      </div>
+      <div class="product">
+        <img src="./exercises/Image/mujer1.jpg" alt="Mujer 1" />
+        <h3>Vestido de Verano</h3>
+        <p>Precio: 80€</p>
+      </div>
+      <div class="product">
+        <img src="./exercises/Image/mujer2.jpg" alt="Mujer 2" />
+        <h3>Blusa Estampada</h3>
+        <p>Precio: 45€</p>
+      </div>
+      <div class="product">
+        <img src="./exercises/Image/mujer1.jpg" alt="Mujer 1" />
+        <h3>Vestido de Verano</h3>
+        <p>Precio: 80€</p>
+      </div>
+      <div class="product">
+        <img src="./exercises/Image/mujer2.jpg" alt="Mujer 2" />
+        <h3>Blusa Estampada</h3>
+        <p>Precio: 45€</p>
+      </div>
+      <!-- Agrega más productos para mujeres aquí -->
+    </section>
+
+    <section id="ninos">
+      <h2>Ropa para Niños</h2>
+      <div class="product">
+        <img src="./exercises/Image/nino1.jpg" alt="Niño 1" />
+        <h3>Conjunto Deportivo</h3>
+        <p>Precio: 35€</p>
+      </div>
+      <div class="product">
+        <img src="./exercises/Image/nino2.jpg" alt="Niño 2" />
+        <h3>Camiseta de Dibujos Animados</h3>
+        <p>Precio: 20€</p>
+      </div>
+      <div class="product">
+        <img src="./exercises/Image/nino1.jpg" alt="Niño 1" />
+        <h3>Conjunto Deportivo</h3>
+        <p>Precio: 35€</p>
+      </div>
+      <div class="product">
+        <img src="./exercises/Image/nino2.jpg" alt="Niño 2" />
+        <h3>Camiseta de Dibujos Animados</h3>
+        <p>Precio: 20€</p>
+      </div>
+      <div class="product">
+        <img src="./exercises/Image/nino1.jpg" alt="Niño 1" />
+        <h3>Conjunto Deportivo</h3>
+        <p>Precio: 35€</p>
+      </div>
+      <div class="product">
+        <img src="./exercises/Image/nino2.jpg" alt="Niño 2" />
+        <h3>Camiseta de Dibujos Animados</h3>
+        <p>Precio: 20€</p>
+      </div>
+      <!-- Agrega más productos para niños aquí -->
+    </section>
+
+    <footer>
+      <p>&copy; 2023 Tienda de Ropa - Sarita. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>

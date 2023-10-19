@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Zaira López" />
+    <title>Pedido</title>
+  </head>
+  <style>
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-position: top;
+      padding: 100px;
+      align-items: center;
+      text-align: center;
+    }
+    header a {
+      text-decoration: none;
+      color: white;
+    }
+    #header-div {
+      background-color: rgba(255, 0, 0, 0.438);
+      width: 50%;
+    }
+
+    #title_section {
+      color: #7e1715;
+      text-align: center;
+      background-color: #d3d5cf;
+      padding-bottom: 20px;
+    }
+
+    h2 {
+      width: 100%;
+    }
+
+    .promociones {
+      text-align: center;
+      background-color: #d3d5cf;
+      display: grid;
+      height: auto;
+      padding: 20px;
+    }
+
+    .promocion {
+      background-color: #c79070;
+      padding: 10px;
+      box-shadow: 0 0 5px gray;
+      margin: 10px;
+      text-align: center;
+      width: 60%;
+      height: auto;
+    }
+    .promocion img {
+      width: 190px;
+      height: auto;
+    }
+
+    footer {
+      background-color: #7e1715;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    /* Aplican los media queries a partir de aquí */
+
+    @media screen and (max-width: 767px) {
+      header {
+        background-image: url(./image/header_peque.png);
+      }
+      .promociones {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 10pt;
+      }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+      header {
+        background-image: url(./image/header_media.jpg);
+      }
+      .promociones {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 10pt;
+      }
+    }
+
+    @media screen and (min-width: 1024px) {
+      header {
+        background-image: url(./image/comida.jpg);
+      }
+      .promociones {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 10pt;
+      }
+    }
+  </style>
+
+  <body>
+    <header>
+      <a href="home.html">
+        <div id="header-div">
+          <h1 id="title">Tuppers Deliciosos Express</h1>
+          <h2>Sabores en tu Puerta, Salud en tu Plato</h2>
+        </div>
+      </a>
+    </header>
+
+    <nav></nav>
+    <h2 id="title_section">Selecciona lo que quieres pedir</h2>
+    <section class="promociones">
+      <div class="promocion">
+        <img src="./image/risotto.jpg" alt="Promoción 1" />
+        <h3>Risotto de Champiñones</h3>
+        <p>
+          Delicioso risotto italiano con champiñones, cremosidad inigualable y
+          sabor a nuez. Un placer gourmet reconfortante..
+        </p>
+      </div>
+      <div class="promocion">
+        <img src="./image/pollo_parrilla.jpg" alt="Promoción 2" />
+        <h3>Pollo a la Parrilla</h3>
+        <p>
+          Jugoso pollo marinado y asado a la parrilla, con sabores ahumados y un
+          toque de limón. Una delicia asada para los amantes de la carne.
+        </p>
+      </div>
+      <div class="promocion">
+        <img src="./image/ensalada_cesar.jpg" alt="Promoción 3" />
+        <h3>Ensalada César</h3>
+        <p>
+          Una ensalada fresca con lechuga, crutones, parmesano y aderezo cremoso
+          César. Sencilla, pero llena de sabor.
+        </p>
+      </div>
+      <div class="promocion">
+        <img src="./image/sushi.jpg" alt="Promoción 1" />
+        <h3>Sushi de Salmón</h3>
+        <p>
+          Rollitos de sushi rellenos de salmón fresco, aguacate y arroz,
+          acompañados de salsa de soja y wasabi. Una explosión de sabores
+          japoneses.
+        </p>
+      </div>
+      <div class="promocion">
+        <img src="./image/tacos.jpg" alt="Promoción 1" />
+        <h3>Tacos al Pastor</h3>
+        <p>
+          Tacos de cerdo marinado con piña, cebolla y cilantro, servidos en
+          tortillas de maíz. La combinación perfecta de dulce y salado.
+        </p>
+      </div>
+      <div class="promocion">
+        <img src="./image/pizza-margarita.jpg" alt="Promoción 1" />
+        <h3>Pizza Margarita</h3>
+        <p>
+          Pizza italiana clásica con salsa de tomate, mozzarella fresca y
+          albahaca. Simplicidad y sabor en cada bocado.
+        </p>
+      </div>
+      <div class="promocion">
+        <img src="./image/ceviche.jpg" alt="Promoción 1" />
+        <h3>Ceviche de Camarones</h3>
+        <p>
+          Camarones frescos marinados en jugo de limón con cebolla, cilantro y
+          chiles. Un plato refrescante y picante.
+        </p>
+      </div>
+      <div class="promocion">
+        <img src="./image/tarta.jpg" alt="Promoción 1" />
+        <h3>Tarta de Chocolate</h3>
+        <p>
+          Tentadora tarta de chocolate con un interior suave y decadente. Un
+          capricho para los amantes del chocolate.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        &copy; 2023 Tuppers Deliciosos Express. Todos los derechos reservados.
+      </p>
+    </footer>
+  </body>
+</html>

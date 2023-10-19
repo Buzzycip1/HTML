@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Zaira López" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio de Sesión</title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url(./image/background_login.jpg);
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+    .login-container {
+      background-color: white;     
+      padding: 1px;
+      display: flex;
+      flex-direction: column;
+      border-radius: 5px;
+      padding: 20px;
+      text-align: center ;
+    }
+    .input-container{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    #password, #username{
+        margin: 10px;
+    }
+
+    
+   
+
+    button {
+      background-color: black;
+      color: white;
+      padding: 7px 35px;
+      border-radius: 6px;
+    }
+    #register a {
+      text-decoration: none;
+    }
+
+  </style>
+  <body>
+    <div class="login-container">
+      <h2>Iniciar Sesión</h2>
+      <form>
+        <div class="input-container">
+          <label for="username">Nombre de Usuario</label>
+          <input type="text" id="username" name="username" required />
+        </div>
+        <div class="input-container">
+          <label for="password">Contraseña</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <button type="button" onclick="redirectToHome()">Iniciar Sesión</button>
+      </form>
+      <div id="register">
+        <p>
+          ¿Aún no te has registrado? <a href="registro.html">Registrarme</a>
+        </p>
+      </div>
+    </div>
+    <script>
+      function redirectToHome() {
+        window.location.href = "home.html";
+      }
+    </script>
+  </body>
+</html>
